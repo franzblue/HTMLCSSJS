@@ -1,0 +1,38 @@
+body {
+    background-color: bisque;
+    font-family: 'BIZ UDPMincho', serif;
+}
+
+h1 {
+    text-align: center;
+}
+
+.container {
+    margin: 100px;
+}
+
+.table {
+    background-color: antiquewhite;
+}
+
+.form {
+    border: solid rgb(32, 32, 32);
+    background-color: antiquewhite;
+    padding: 20px;
+}
+
+.card.body {
+    background-color: red;
+}
+
+.bannerLink {
+    background-color: rgb(240, 248, 255, 20%);
+}
+
+.bannerLink:hover {
+    background-color: rgb(240, 248, 255, 42%);
+}
+
+.bannerDiv {
+    margin-bottom: -10px;
+}

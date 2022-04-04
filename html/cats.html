@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" 
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=BIZ+UDPMincho&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="main.css">
+    <title>Cats</title>
+</head>
+<body>
+
+    <script>
+        $(function(){
+          $("#nav-placeholder").load("nav.html");
+        });
+    </script>
+    <div  class="bannerDiv" id="nav-placeholder"></div>
+
+    <h1>Cats</h1>
+
+    <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a href="/html/dogs.html">Dogs</a></li>
+          <li class="breadcrumb-item active" aria-current="page">Cats</a></li>
+          <li class="breadcrumb-item"><a href="/html/others.html">Other Animals</a></li>
+        </ol>
+    </nav>
+
+    <div class="container">
+        <table class="table">
+          <thead class="thead-dark">
+            <tr>
+              <th scope="col">#</th>
+              <th scope="col">Name</th>
+              <th scope="col">Breed</th>
+              <th scope="col">Age</th>
+            </tr>
+          </thead>
+          <tbody >
+
+            <script>
+                let array = [
+                      [1, "Friskers", "Calico", "9 Months"],
+                      [2, "Dr. Chips", "British Shorthair", "75 Months"],
+                      [3, "Duke", "Siamese", "18 Months"]
+                    ]
+                const tbody = document.querySelector('tbody');
+                array.forEach(item => {
+                    const tr = tbody.insertRow();
+                    tr.insertCell().innerText = item[0];
+                    tr.insertCell().innerText = item[1];
+                    tr.insertCell().innerText = item[2];
+                    tr.insertCell().innerText = item[3];
+                });
+              </script>
+          </tbody>
+        </table>
+      </div>
+</body>
+</html>
